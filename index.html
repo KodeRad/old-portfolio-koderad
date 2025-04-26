@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <link rel="shortcut icon" type="image/png" href="imgs/Logo.png" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <script defer type="module" src="/script.js"></script>
+    <title>KodeRad Web Development</title>
+  </head>
+
+  <body>
+    <div class="background wrapper__main">
+      <header class="header" id="section--1">
+        <nav class="nav menu">
+          <img src="/imgs/Logo.png" alt="KK" class="nav__logo fade__out" />
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a class="nav__link fade__out" href="#section--1"> Home </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link fade__out" href="#section--2"> Skills </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link fade__out" href="#section--3"> Projects </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link fade__out" href="#section--4"> Contact </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__title">
+          <div class="welcome__name welcome__page">
+            <img src="/imgs/Name.png" alt="KONRAD KRASOCKI" class="name__img" />
+            <h1 class="name__img__description">Front End Developer</h1>
+            <p class="paragraph__welcome">
+              I'm Front End Web Developer based in Wrocław, Poland. <br />
+              <br />
+              I'm inspired by change and I believe programming is the <br />
+              most changing business there is.
+            </p>
+            <img
+              src="/imgs/myPhoto.png"
+              alt="KONRAD KRASOCKI"
+              class="welcome myphoto__img"
+            />
+            <div class="map" id="map">
+              <div class="map__wrapper">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1282040.5182734604!2d15.673493111280003!3d51.1271775696389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c2d4b58abf%3A0xb70956aec205e0f5!2zV3JvY8WCYXc!5e0!3m2!1sen!2spl!4v1685013981068!5m2!1sen!2spl"
+                  width="450"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <img src="/imgs/scrollDown.png" class="scroll__img" />
+          </div>
+        </div>
+      </header>
+
+      <section class="section section__skills" id="section--2">
+        <div class="section__title">SKILLS</div>
+        <h2 class="section__description">
+          These are the skills I have been studying along with the time it took
+          me.
+        </h2>
+        <div class="skills__imgs">
+          <img src="imgs/HTML_CSS_JS.png" class="skills__img" />
+          <!-- <span id="clock" class="toggl__img"></span> -->
+          <img src="imgs/react_logo.png" class="react__img" />
+        </div>
+
+        <h3 id="skills_description" class="section__description__second">
+          I have spent hundreds of hours learning mainly JavaScript along with
+          HTML and CSS. Thanks to that commitment I believe I will bring a lot
+          to the table if we ever met business-wise.
+        </h3>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section class="section section__portfolio" id="section--3">
+        <div class="section__title">PROJECTS</div>
+        <h2 class="section__description">
+          I am currently working on a more advanced project in React. These are
+          projects I have already done.
+        </h2>
+
+        <div class="projects">
+          <div class="project project--1">
+            <div class="project__content">
+              <a
+                class="project__link"
+                href="https://github.com/KodeRad/KodeRad.github.io"
+                target="_blank"
+              >
+                <h3 class="project__title">My website</h3>
+                <img
+                  src="imgs/project_mywebsite_img.png"
+                  class="project__img"
+                />
+              </a>
+              <h3 class="project__description">
+                It's a good example of skills I've aquired so far. Among others
+                you can see here sliders, sticky nav, objects loading on
+                intersection and much more!
+              </h3>
+            </div>
+          </div>
+          <!-- todo list -->
+          <div class="project project--2">
+            <div class="project__content">
+              <a
+                class="project__link"
+                href="https://github.com/KodeRad/Todo"
+                target="_blank"
+              >
+                <h3 class="project__title">Todo list</h3>
+                <img src="imgs/todo_list.png" class="todo_img project__img" />
+              </a>
+              <h3 class="project__description">
+                It's a simple React application for a learning purposes coded
+                along with a youtube teacher Kyle from Web Dev Simplified
+              </h3>
+            </div>
+          </div>
+          <div class="project project--3">
+            <div class="project__content">
+              <a
+                class="project__link"
+                href="https://github.com/KodeRad/simpleAPI"
+                target="_blank"
+              >
+                <h3 class="project__title">simple API</h3>
+                <img src="imgs/simple_API.png" class="project__img" />
+              </a>
+              <h3 class="project__description">
+                Built with Node.js using ExpressJS. I was also using Insomnia as
+                a software for checking requests and responses.
+              </h3>
+            </div>
+          </div>
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section section__contact" id="section--4">
+        <div class="section__title">CONTACT</div>
+        <h2 class="section__description"></h2>
+        <div class="contact">
+          <div class="contact__item">
+            <a
+              class="contact__link"
+              href="https://www.linkedin.com/in/konrad-krasocki-49aaaa230"
+            >
+              <img
+                src="imgs/LinkedIn_logo.png"
+                class="contact__img linkedin__logo"
+              />
+            </a>
+          </div>
+          <div class="contact__item">
+            <a
+              class="contact__link"
+              href="mailto:konrad.krasocki@gmail.com?subject=Inquiry"
+            >
+              <img src="imgs/gmail_logo.png" class="contact__img gmail__logo" />
+            </a>
+          </div>
+        </div>
+
+        <h3 class="section__description__second">
+          Feel free to contact me using these means.
+        </h3>
+      </section>
+
+      <!-- Chuck Norris Joke -->
+      <section class="section section__joke" id="section--4">
+        <div class="section__title">Chuck Norris' Wisdom</div>
+        <h2 class="section__description"></h2>
+        <div class="chuck__container">
+          <div class="contact__item">
+            <img src="imgs/ChuckNorris.png" class="chuck__img" />
+          </div>
+          <div class="chucks__joke">
+            <h3 class="joke section__description__second"></h3>
+          </div>
+        </div>
+        <button class="btn__joke">Pick His Brain</button>
+        <h3 class="section__description__second"></h3>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer menu">
+        <div class="footer__content">
+          <img src="/imgs/Logo.png" alt="KK" class="footer__logo fade__out" />
+          <p class="footer__para fade__out">&copy; 2023 Konrad Krasocki</p>
+          <nav class="footer__nav">
+            <ul class="footer__nav__list">
+              <li>
+                <a class="footer__link fade__out" href="#section--1">Home</a>
+              </li>
+              <li>
+                <a class="footer__link fade__out" href="#section--2"
+                  >My Skills</a
+                >
+              </li>
+              <li>
+                <a class="footer__link fade__out" href="#section--3"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "koderad.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Konrad Krasocki",
+  "license": "ISC",
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.15.2"
+  }
+}

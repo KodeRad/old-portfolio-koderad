@@ -1,0 +1,788 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  color: whitesmoke;
+  scroll-margin: 8rem;
+  transition: transform 1.5s, opacity 0.5s;
+}
+
+body {
+  background-image: url(/imgs/codeBackground2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* GENERAL ELEMENTS */
+
+.wrapper__main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  border-top: 1px solid transparent;
+  position: relative;
+  width: 100%;
+}
+
+/* NAVIGATION */
+.nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(28, 28, 28, 0.95);
+  border-radius: 10px;
+  width: 100%;
+  height: 5rem;
+  margin-top: 25px;
+  margin-left: 0px;
+  z-index: 100;
+}
+
+.nav.sticky {
+  position: fixed;
+  width: 1200px;
+  margin-left: -0px;
+}
+
+.nav__logo {
+  width: 170px;
+  height: auto;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  padding: 0 4rem;
+}
+
+.nav__link {
+  margin-left: 5rem;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* SECTION 1 - HOME PAGE */
+
+.welcome__name {
+  width: 40rem;
+  height: auto;
+  margin-left: 30px;
+  margin-top: 13rem;
+  margin-bottom: 2rem;
+}
+
+.name__img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.name__img__description {
+  padding-left: 20rem;
+  font: inherit;
+  font-size: x-large;
+  margin-bottom: 5rem;
+}
+
+.myphoto__img {
+  border-radius: 20px;
+  position: absolute;
+  margin-left: 38rem;
+  margin-top: -26rem;
+  width: 35rem;
+  height: auto;
+}
+
+.paragraph__welcome {
+  height: 16rem;
+  position: absolute;
+  margin-left: 32.5rem;
+  margin-top: 7rem;
+  font: inherit;
+  font-size: xx-large;
+  background-color: rgb(40, 40, 40, 0.7);
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+}
+
+.map {
+  display: flex;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-left: 0px;
+  margin-top: 2rem;
+}
+
+.map .map__wrapper {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.scroll__img {
+  margin-top: 60px;
+  margin-left: -28px;
+  width: 1200px;
+  height: auto;
+}
+
+/* SECTIONS - GENERAL ITEMS */
+
+.section--hidden {
+  opacity: 0;
+  transform: translateX(20rem);
+  /* transform: matrix3d(); */
+}
+
+.section {
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 7rem;
+  background-color: rgb(40, 40, 40, 0.7);
+  transition: transform 1.5s, opacity 1s;
+}
+
+.section__title {
+  font-size: 50px;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.section__description {
+  font: inherit;
+  font-size: 30px;
+  margin-bottom: 5rem;
+}
+
+/* SECTION 2 - MY SKILLS */
+
+.section__skills {
+  margin-top: 3rem;
+}
+
+.skills__imgs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding: 0 14.5rem;
+}
+
+.skills__img {
+  width: 800px;
+  align-self: center;
+  height: auto;
+}
+
+.react__img {
+  margin-top: 1rem;
+  margin-left: 4rem;
+  width: 12rem;
+  height: auto;
+  align-self: center;
+}
+
+.section__description__second {
+  font: inherit;
+  font-size: 30px;
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+}
+
+/* SECTION 3 - MY PROJECTS */
+
+.projects {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  height: 38rem;
+  margin: 0 auto;
+  font: inherit;
+}
+
+.project {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 1s;
+
+  margin-top: -10%;
+  margin-left: 32%;
+}
+
+.project__content {
+  margin: 0 0;
+  padding: 0 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.project__link {
+  text-decoration: none;
+}
+
+.project__title {
+  font: inherit;
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.project__img {
+  height: 300px;
+  width: auto;
+  /* align-self: center; */
+}
+
+.project__description {
+  display: flex;
+  margin: 0 2.5rem;
+  margin-top: 2rem;
+  width: 12rem;
+  word-wrap: normal;
+  font-size: large;
+}
+
+.project__description {
+  text-transform: none;
+  font-weight: 400;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 10%;
+  color: whitesmoke;
+  background-color: rgb(40, 40, 40);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10rem 5rem;
+  border-style: none;
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(-50%, -50%);
+  /* margin: 10rem 50rem; */
+  transition: transform 0s;
+}
+.slider__btn--left {
+  left: 6%;
+  transform: translate(50%, -50%);
+  /* margin: 10rem 50rem; */
+  transition: transform 0s;
+}
+
+.dots {
+  position: absolute;
+  width: 14rem;
+  bottom: 15%;
+  left: 45.5%;
+  display: flex;
+}
+
+.dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.dot__active {
+  background-color: #fff;
+  /* background-color: #888; */
+  opacity: 1;
+}
+
+/* SECTION 4 - CONTACT */
+
+.section__contact {
+  margin-bottom: 7rem;
+}
+
+.contact {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact__img {
+  display: inline;
+  height: 12rem;
+  width: auto;
+}
+
+.contact__item {
+  position: relative;
+  display: inline-block;
+}
+
+.contact__link {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  height: 50%;
+  margin: 1rem 3rem 6rem 1.5rem;
+}
+
+/* CHUCK NORRIS */
+
+.section__joke {
+  text-align: center;
+}
+
+.chuck__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.chuck__img {
+  border-radius: 20px;
+  position: relative;
+  right: 20%;
+  width: 50%; /* Adjust the width as needed */
+}
+
+.chucks__joke {
+  word-wrap: normal;
+  width: 35%;
+  max-width: 600px;
+  height: auto;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  transition: transform 0s;
+}
+
+.btn__joke {
+  margin-top: 2rem;
+  color: rgb(40, 40, 40);
+  width: 10rem;
+  height: 3rem;
+  border-radius: 15px;
+}
+
+/* FOOTER */
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+  width: 100%;
+  height: 5rem;
+}
+
+.footer__para {
+  margin-left: -10rem;
+  font-size: large;
+}
+
+.footer__nav__list {
+  padding: 0 4rem;
+  align-items: center;
+  display: flex;
+  list-style: none;
+  margin-left: 5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer__nav__list li a {
+  margin-left: 2rem;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+  font: inherit;
+}
+
+.footer__logo {
+  width: 100px;
+  height: auto;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MOBILE VIEW */
+/* <600px, 601px, 768px, 992px, 1200px */
+
+@media (max-width: 900px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 100%;
+    box-sizing: content-box;
+    color: whitesmoke;
+    scroll-margin: 8rem;
+    transition: transform 1.5s, opacity 0.5s;
+  }
+
+  body {
+    background-image: url(/imgs/codeBackground2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    /* max-width: 100%; */
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+  /* GENERAL ELEMENTS */
+
+  .wrapper__main {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .header {
+    border-top: 1px solid transparent;
+    position: relative;
+    width: 100vw;
+    margin-top: -5%;
+  }
+
+  .section {
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 5%;
+    background-color: rgb(40, 40, 40, 0.7);
+    transition: transform 1.5s, opacity 1s;
+  }
+
+  .section__title {
+    font-size: xx-large;
+    margin: 0% 2%;
+    padding-top: 8%;
+  }
+
+  .section__description {
+    font-size: large;
+    margin: 10% 2%;
+  }
+
+  .section__description__second {
+    font-size: large;
+    margin: 10% 2%;
+    margin-top: -10%;
+  }
+
+  /* NAVIGATION */
+
+  .nav {
+    width: 100vw;
+    height: 14vw;
+  }
+
+  .nav__logo {
+    width: 22%;
+    height: auto;
+    margin-left: 0%;
+  }
+
+  .nav__links {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .nav__link {
+    margin-left: 5rem;
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* SECTION 1 - HOME */
+
+  .welcome__name {
+    width: 93vw;
+    height: auto;
+    margin-left: 2.5%;
+    margin-top: 32%;
+    margin-bottom: 2rem;
+  }
+
+  .name__img__description {
+    padding-left: 50%;
+    font-size: large;
+  }
+
+  .myphoto__img {
+    position: relative;
+    left: 6%;
+    width: 90vw;
+    height: auto;
+    margin-left: 0rem;
+    margin-top: 0rem;
+  }
+
+  .paragraph__welcome {
+    width: 50vw;
+    font-size: medium;
+    height: auto;
+    position: absolute;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    z-index: 99;
+  }
+
+  .map {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+  }
+
+  .scroll__img {
+    margin-left: 2.25%;
+    width: 90vw;
+  }
+
+  /* SECTION 2 - MY SKILLS */
+
+  .skills__imgs {
+    display: relative;
+    width: 60vw;
+    padding: 0 1rem;
+  }
+
+  .react__img {
+    width: 23vw;
+    margin-top: 0.75rem;
+    margin-left: 1.5rem;
+    align-self: center;
+  }
+
+  .hours__img {
+    margin-top: 1rem;
+    margin-left: 10%;
+    width: 25vw;
+    height: auto;
+    align-self: center;
+  }
+
+  .skills__img {
+    width: 100%;
+  }
+
+  .toggl__img {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    width: 23vw;
+  }
+
+  /* SECTION 3 - MY PROJECTS */
+
+  .projects {
+    position: relative;
+    display: flex;
+    height: 50vh;
+    margin: 0 auto;
+    font: inherit;
+    overflow: hidden;
+  }
+
+  .project {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 1s;
+
+    margin-top: 0%;
+    margin-left: 28%;
+  }
+
+  .project__content {
+    margin: 0 0;
+    padding: 0 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .project__link {
+    text-decoration: none;
+  }
+
+  .project__title {
+    font: inherit;
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+
+  .project__img {
+    height: 300px;
+    width: auto;
+    /* align-self: center; */
+  }
+
+  .project__description {
+    display: none;
+  }
+
+  .project__description {
+    text-transform: none;
+    font-weight: 400;
+  }
+
+  .slider__btn {
+    position: absolute;
+    top: 10%;
+    color: whitesmoke;
+    background-color: rgb(40, 40, 40);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: none;
+  }
+
+  .todo_img {
+    width: 75vw;
+    height: auto;
+  }
+
+  .slider__btn--right {
+    right: 6%;
+    transform: translate(150%, -50%);
+    transition: transform 0s;
+  }
+  .slider__btn--left {
+    left: 6%;
+    transform: translate(-150%, -50%);
+    transition: transform 0s;
+  }
+
+  .dots {
+    width: 40vw;
+    position: absolute;
+    bottom: 8%;
+    left: 37.5%;
+  }
+
+  .project__content {
+    position: relative;
+    left: -15%;
+  }
+
+  /* SECTION 4 - CONTACT */
+
+  .section__contact {
+    margin-bottom: 0rem;
+  }
+
+  .linkedin__logo {
+    width: 21vw;
+    height: auto;
+    align-self: center;
+  }
+
+  .gmail__logo {
+    position: relative;
+    width: 26vw;
+    height: auto;
+    top: 3.5%;
+  }
+
+  .contact_title {
+    margin-top: 3rem;
+  }
+
+  /* CHUCK NORRIS */
+
+  .chuck__container {
+    /*  what for??? */
+    overflow: visible;
+  }
+
+  .chucks__joke {
+    width: 42%;
+    right: 50%;
+    top: 50%;
+    transform: translate(-20%, -40%);
+  }
+
+  .btn__joke {
+    position: relative;
+    width: 35vw;
+    height: 5vh;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    right: 16.5%;
+  }
+
+  /* FOOTER */
+
+  .footer__content {
+    overflow: auto;
+    height: 14vw;
+  }
+
+  .footer__para {
+    position: absolute;
+    font-size: large;
+    right: 20%;
+    margin-bottom: 0.25vh;
+  }
+
+  .footer__nav__list {
+    padding: 0 1rem;
+    margin-left: 0rem;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .footer__logo {
+    position: absolute;
+    width: 22%;
+    height: auto;
+  }
+}
